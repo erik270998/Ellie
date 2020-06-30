@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Ryosuke`,
-    description: `The portfolio and blog of Ryosuke`,
-    siteUrl: `http://whoisryosuke.com/`,
+    title: `Ellie`,
+    description: ``,
+    siteUrl: ``,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -61,8 +61,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Ryosuke - Designer, Developer, & Influencer',
-        short_name: 'Ryosuke',
+        name: '',
+        short_name: '',
         start_url: '/',
         background_color: '#F5F5F5',
         theme_color: '#005CDD',
