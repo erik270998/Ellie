@@ -32,18 +32,8 @@ export const resources: React.FC<Props> = ({data}) => {
         postImage={postImage}
       />
       {/*------- Design resources card grid -------*/}
-      <SectionHeading emoji="🎨" heading="Design resources" />
+      <SectionHeading emoji="🎨" heading="Portfolio" />
       <DesignResources resources={data.design.edges} />
-
-      {/*------- Dev resources data table -------*/}
-      <SectionHeading tall emoji="⚙️" heading="Development resources" />
-      <DevResources resources={data.development.edges} />
-
-      {/*------- Lastest posts tagged tutorial -------*/}
-      <SectionHeading emoji="📚" heading="Tutorials" tall />
-      <PostLoop loop={data.projects.edges} skip={false} />
-
-      <Newsletter />
 
     </Layout>
   )

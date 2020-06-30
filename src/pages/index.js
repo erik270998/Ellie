@@ -22,63 +22,7 @@ const Frontpage = ({
   return (
     <Layout className="Frontpage pt2">
       <GreetingMasthead />
-
-      {/* <ServicesGrid /> */}
-
-      {/*------- Featured image -------*/}
-      <SectionHeading emoji="📓" heading="Latest writings" />
-      <Featured selectedTheme={selectedTheme}>
-        <BasicCard
-          width={[1, 1, 2 / 3, 1 / 2]}
-          solid
-          title={blog.edges[0].node.frontmatter.title}
-          subheader={blog.edges[0].node.frontmatter.tags}
-          description={blog.edges[0].node.excerpt}
-          link={blog.edges[0].node.fields.slug}
-        />
-      </Featured>
-
-      {/*------- Posts loop -------*/}
-      <PostLoop type="blog" loop={blog.edges} skip={true} />
-      <Box
-        bg="white"
-        sx={{ borderBottom: '1px solid black', borderColor: 'black' }}
-        textAlign="right"
-        p={3}
-      >
-        <ButtonOutline
-          width={[1, 1, 1 / 3]}
-          as={Link}
-          to={'blog'}
-          p={2}
-          height="3rem"
-        >
-          Find more reading material
-        </ButtonOutline>
-      </Box>
-
-      {/*------- Projects loop -------*/}
-      <SectionHeading emoji="🎨" heading="Latest projects" />
-      <PostLoop type="project" loop={projects.edges} skip={false} />
-      <Flex
-        bg="white"
-        sx={{ borderBottom: '1px solid black', borderColor: 'black' }}
-        textAlign="right"
-        justifyContent="flex-end"
-        p={3}
-      >
-        <ButtonOutline
-          width={[1, 1, 1 / 3]}
-          as={Link}
-          to={'projects'}
-          p={2}
-          height="3rem"
-        >
-          See more eye candy
-        </ButtonOutline>
-      </Flex>
-
-      <Contact />
+      <Newsletter />
     </Layout>
   )
 }

@@ -36,11 +36,10 @@ export default class Frontpage extends Component {
           }}
         >
           <Heading color="black" fontSize={[1, 2, 3]}>
-            Ryosuke meaning <Highlight>clear</Highlight> mediation.
+            Lorem ipsum dolor sit amet.
           </Heading>
           <Heading color="black" fontSize={[4, 5, 6]}>
-            The artist formerly known as <Highlight>Oscar</Highlight>{' '}
-            <Image src={BombEmoji} alt="Bomb emoji" width="40px" />
+            Lorem ipsum dolor sit amet.
           </Heading>
         </Box>
         <Flex
@@ -65,57 +64,13 @@ export default class Frontpage extends Component {
 
           <Box width={[1, 1, 1 / 3]} px={3} py={5}>
             <Text color="black" variant="paragraph" px={5} mt={4} mb={4}>
-              I've been working as a designer and developer for{' '}
-              <strong>over 15 years now</strong>, with over a decade of
-              experience in the cannabis industry.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus luctus hendrerit. In vitae fringilla neque. Nulla luctus mi metus, sit amet iaculis nisl finibus a. Integer luctus dignissim elementum.
             </Text>
             <Text color="black" variant="paragraph" px={5}>
-              From engineering <a href="http://kushy.net">web apps</a> and
-              e-commerce solutions, to designing brands and products, to
-              producing innovative digital media, and even creating{' '}
-              <strong>
-                famous{' '}
-                <a href="http://weedporndaily.tumblr.com/tagged/gif">
-                  ganja related GIFs
-                </a>
-              </strong>{' '}
-              -- my experience as an <strong>entrepreneur</strong> has broadened
-              my skillset substantially.
+            Vestibulum eu turpis quis lectus interdum auctor. Integer non neque ligula. Fusce a quam congue mauris dictum consequat nec vitae est. Aliquam sed dignissim tortor. Sed eu consequat nibh. Quisque lobortis elit eget varius egestas.
             </Text>
           </Box>
         </Flex>
-
-        <Skills />
-
-        {/*------- Featured image -------*/}
-        <SectionHeading emoji="🚀" heading="My recent work" tall />
-        {/*------- Posts loop -------*/}
-        <PostLoop loop={data.projects.edges} skip={skip} />
-
-        {/*------- Speaking / Workshops -------*/}
-        <SectionHeading emoji="🎓" heading="Speaking and Workshops" tall />
-        <Box
-          as="section"
-          bg="white"
-          px={3}
-          py={5}
-          className="Speaking"
-          sx={{ borderBottom: '1px solid black', borderColor: 'black' }}
-        >
-          <Text color="black" px={5}>
-            I’m available for speaking gigs,{' '}
-            <a href="mailto:ryosuke.san.hana@gmail.com">contact me anytime</a>.
-            I love to speak about my experiences with full-stack development,
-            entrepreneurship, or design and branding.
-          </Text>
-          {/* <h3 className="Title text blue">Upcoming Speaking Engagements</h3>
-                    <ul>
-                        <li>
-                            <a href="#">Gig</a>
-                        </li>
-                    </ul> */}
-          {/* <h3 className="Title text blue">Previous Speaking Engagements</h3> */}
-        </Box>
 
         <Contact />
       </Layout>

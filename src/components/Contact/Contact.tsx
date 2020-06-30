@@ -60,7 +60,7 @@ export const Contact: React.FC<Props> = () => {
   const [contactData, setContactData] = useState({
     name: '',
     email: '',
-    service: 'design systems',
+    service: 'Lorem ipsum',
   })
   const [formStatus, setFormStatus] = useState({
     loading: false,
@@ -70,22 +70,22 @@ export const Contact: React.FC<Props> = () => {
   const dropdownOptions = [
     // Looking for assistance with
     {
-      name: 'design systems',
+      name: 'Lorem ipsum',
     },
     {
-      name: 'design tooling',
+      name: 'Lorem ipsum',
     },
     {
-      name: 'UX/UI design',
+      name: 'Lorem ipsum',
     },
     {
-      name: 'API development',
+      name: 'Lorem ipsum',
     },
     {
-      name: 'METRC integration',
+      name: 'Lorem ipsum',
     },
     {
-      name: 'something cool',
+      name: 'Lorem ipsum',
     },
   ]
   const updateContactData = (e) => {
@@ -150,7 +150,7 @@ export const Contact: React.FC<Props> = () => {
             id="name"
             name="name"
             type="name"
-            placeholder="Squall Leonhart"
+            placeholder="My name is"
             required
             onChange={updateContactData}
             mx={2}
@@ -162,7 +162,7 @@ export const Contact: React.FC<Props> = () => {
             <Select
               id="service"
               name="service"
-              defaultValue="design systems"
+              defaultValue="Lorem ipsum"
               onChange={updateContactData}
             >
               {Object.entries(dropdownOptions).map(([key, dropdownOption]) => (
@@ -177,7 +177,7 @@ export const Contact: React.FC<Props> = () => {
             id="email"
             name="email"
             type="email"
-            placeholder="squall.leonhart@balambgarden.co"
+            placeholder="myemail@email.com"
             required
             onChange={updateContactData}
             mx={2}

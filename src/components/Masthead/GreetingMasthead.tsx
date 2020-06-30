@@ -14,43 +14,24 @@ const GreetingMasthead: React.FunctionComponent<IGreetingMastheadProps> = ({
     <section className={className}>
       <Box mb={4}>
         <Heading variant="label" textAlign="right" mb={2}>
-          はじめまして
+          Lorem ipsum
         </Heading>
         <Heading fontSize={[3, 4, 7]} textAlign="right">
-          Hey I'm Ryosuke ✌️
+          Lorem ipsum ✌️
           <br />
-          Designer, developer,
+          Lorem ipsum
           <br />
-          &amp; influencer 💭
+          &amp; Lorem ipsum 💭
         </Heading>
       </Box>
       <Box mb={4}>
         <Heading variant="label" textAlign="right">
-          わたし
+          Lorem ipsum
         </Heading>
         <Heading fontSize={[2, 3, 5]} textAlign="right">
-          full stack engineer
+          Lorem ipsum
           <br />
-          UI/UX designer
-        </Heading>
-      </Box>
-      <Box mb={4}>
-        <Heading fontSize={[2, 3, 5]} textAlign="right" mb={2}>
-          Los Angeles
-        </Heading>
-        <Heading variant="label" textAlign="right">
-          `に住んでいる
-        </Heading>
-      </Box>
-      <Box mb={4}>
-        <Heading variant="label" textAlign="right" mb={2}>
-          I live for{' '}
-        </Heading>
-        <Heading fontSize={[1, 2]} textAlign="right">
-          clean design, <br />
-          accessible UX,
-          <br />
-          &amp; cutting-edge tech
+          Lorem ipsum
         </Heading>
       </Box>
     </section>

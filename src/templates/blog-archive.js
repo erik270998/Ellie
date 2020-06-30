@@ -113,7 +113,7 @@ const BlogArchive = ({ data, pathContext }) => {
         <Flex>
           <ButtonOutline
             as={GLink}
-            to="tags"
+            to={'/tags'}
             width={[1]}
             height="3rem"
             p={3}
